@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;UNTAMED STREETWEAR&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">:root{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--bg:#0a0a0a;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--panel:#121212;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text:#f5f5f5;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--muted:#9a9a9a;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--accent:#e63946;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">*{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-sizing:border-box;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: Arial, Helvetica, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--bg);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.5;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow-x:hidden;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">a{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-decoration:none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:inherit;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.container{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width:1200px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:0 24px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ---------- HERO ---------- */</p>
+<p class="p2"><br></p>
+<p class="p1">.hero{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height:100vh;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">    </span>radial-gradient(circle at 20% 20%, #1b1b1b, transparent 60%),</p>
+<p class="p1"><span class="Apple-converted-space">    </span>radial-gradient(circle at 80% 80%, #1b1b1b, transparent 60%);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero::after{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content:"UNTAMED";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>bottom:8%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>right:-10%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:18rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:900;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:#111;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:-0.05em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>pointer-events:none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero-content{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width:720px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero h1{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:clamp(3rem,8vw,6.5rem);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:900;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero h1 span{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--accent);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero p{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:24px 0 40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:1.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.btn{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:18px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:2px solid var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:800;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:0.12em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition:0.3s;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.btn:hover{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:#000;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ---------- SECTION BASE ---------- */</p>
+<p class="p2"><br></p>
+<p class="p1">section{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:100px 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.section-label{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:0.35em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:16px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.section-title{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:clamp(2.5rem,6vw,4rem);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:900;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:40px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ---------- MANIFESTO ---------- */</p>
+<p class="p2"><br></p>
+<p class="p1">.manifesto{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--panel);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.manifesto p{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width:900px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.manifesto strong{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--accent);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ---------- DROP ---------- */</p>
+<p class="p2"><br></p>
+<p class="p1">.drop{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns:1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:60px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items:center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.drop h3{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:900;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.drop p{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:1.2rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.drop img{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width:100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height:460px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>object-fit:cover;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid #222;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ---------- PRODUCTS ---------- */</p>
+<p class="p2"><br></p>
+<p class="p1">.products{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--panel);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.grid{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns:repeat(auto-fit,minmax(260px,1fr));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:40px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.card{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid #222;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:32px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition:0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.card::before{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content:"→";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top:20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>right:20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:1.5rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.card:hover{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform:translateY(-10px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color:var(--accent);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.card h4{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:1.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:800;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.card p{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ---------- VISUAL STORY ---------- */</p>
+<p class="p2"><br></p>
+<p class="p1">.posters{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.poster-grid{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top:60px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns:repeat(auto-fit,minmax(280px,1fr));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:40px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.poster{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#0f0f0f;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid #222;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.poster img{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width:100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height:420px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>object-fit:cover;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.poster div{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.poster h5{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:1.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.poster span{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style:italic;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ---------- COMMUNITY ---------- */</p>
+<p class="p2"><br></p>
+<p class="p1">.community p{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width:800px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* ---------- CTA ---------- */</p>
+<p class="p2"><br></p>
+<p class="p1">.cta{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:linear-gradient(135deg,#000,#1a1a1a);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.cta h2{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:clamp(3rem,7vw,5rem);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:900;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:40px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">@media(max-width:900px){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.drop{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns:1fr;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero::after{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HERO --&gt;</p>
+<p class="p1">&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container hero-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;UNTAMED&lt;br&gt;&lt;span&gt;STREETWEAR&lt;/span&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Built for those who refuse to move quietly.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#drop" class="btn"&gt;Enter the Wild&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- MANIFESTO --&gt;</p>
+<p class="p1">&lt;section class="manifesto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-label"&gt;// MANIFESTO&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Break What Tries to Shape You&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>UNTAMED exists for people who don’t blend in, don’t slow down,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>and don’t ask permission. &lt;strong&gt;This is street culture without the costume.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- DROP --&gt;</p>
+<p class="p1">&lt;section id="drop"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container drop"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="section-label"&gt;// DROP 01&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;Midnight Riot&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Oversized silhouettes. Silent aggression. Built for after dark.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#" class="btn"&gt;Explore Drop&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="https://images.unsplash.com/photo-1520975916090-3105956dac38"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- PRODUCTS --&gt;</p>
+<p class="p1">&lt;section class="products"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-label"&gt;// ESSENTIALS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Built Different&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Statement Hoodies&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Heavy presence. Zero compromise.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Cargo Pants&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Function meets rebellion.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Signature Tees&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Say nothing. Mean everything.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- VISUAL STORY --&gt;</p>
+<p class="p1">&lt;section class="posters"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-label"&gt;// VISUAL STORY&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Anime-Inspired Frames&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="poster-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="poster"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5&gt;Untamed Shirt&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;Soft chaos&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="poster"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5&gt;Untamed Pants&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;Freedom in motion&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- COMMUNITY --&gt;</p>
+<p class="p1">&lt;section class="community"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-label"&gt;// COMMUNITY&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Not Everyone Belongs Here&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Artists. Skaters. Night thinkers. People who build their own lane.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>If you blend in — this isn’t for you.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CTA --&gt;</p>
+<p class="p1">&lt;section class="cta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Stop Following&lt;br&gt;Start Leading&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="btn"&gt;Claim Your Piece&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
